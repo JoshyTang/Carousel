@@ -1,11 +1,11 @@
-##Introduction
+## Introduction
     Private memory for unpurposed direnctions 
 
-##Items Involved
+## Items Involved
 * BluetoothDataTransmission
  * Demonstrate the vibration information captured by a all-organic polymer piezoelectric sensor in an App on a mobile phone
 
-##Content included
+## Content included
 * BluetoothDataTransmission
  * AndroidCode 
    * AS with Gradle for the App for receiving data through Bluetooth and schematically display the waveform
