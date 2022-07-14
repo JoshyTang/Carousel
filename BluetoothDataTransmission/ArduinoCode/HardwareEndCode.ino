@@ -1,17 +1,17 @@
-#include <SoftwareSerial.h>   // 引用库
-//定义蓝牙模块引脚
-SoftwareSerial BT(8, 9); // 接HC05发送脚与D8接口连接，HC05接收脚与D9接口连接
-char val;  // 存储接收的数据
+#include <SoftwareSerial.h>   // Import library
+// Define pins of the BLE module
+SoftwareSerial BT(8, 9); // HC-05 TX to UNO-D8 port; HC-05 RX to UNO-D9 port
+char val;  // Store the received data
 int pin = A0;
 void setup() {
      analogReference(INTERNAL);
        Serial.begin(9600);   
        Serial.println("BT is ready!");
-       // 如果是HC-06，改成38400；
+       // Baud rate 38400 for HC-06
        BT.begin(9600);
 }
 void loop() {
-       // 把串口监视器接收到的数据发送给蓝牙模块
+       // Send the data received by the serial monitor to the BLE module
        int sensorValue = analogRead(pin);
      float voltage= sensorValue * (1.1 / 1023.0) * 1000;
 //     Serial.println(voltage, DEC); 
@@ -23,7 +23,7 @@ void loop() {
               BT.print(voltage);
               BT.print(';');
        //}
-       // 把蓝牙模块接收到的数据发送到串口监视器
+       // Send the data received by the BLE module to the serial monitor
        if (BT.available()) {
               val = BT.read();
               Serial.print(val);
