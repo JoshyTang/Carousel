@@ -8,7 +8,7 @@
 
 ## Content included
 * BluetoothDataTransmission
- * AndroidCode 
-   * AS with Gradle for the App for receiving data through Bluetooth and schematically display the waveform
- * ArduinoCode
-   * Arduino code for transmitting the data and configuring the parameters of the bluetooth module
+  * AndroidCode 
+    * AS with Gradle for the App for receiving data through Bluetooth and schematically display the waveform
+  * ArduinoCode
+    * Arduino code for transmitting the data and configuring the parameters of the bluetooth module
