@@ -3,7 +3,7 @@
 
 ## Items Involved
 * BluetoothDataTransmission
- * Demonstrate the vibration information captured by a all-organic polymer piezoelectric sensor in an App on a mobile phone
+  * Demonstrate the vibration information captured by a all-organic polymer piezoelectric sensor in an App on a mobile phone
 
 ## Content included
 * BluetoothDataTransmission
